@@ -8,10 +8,7 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
     color: var(--dark-header-color);
-    box-sizing: border-box;
 }
 
 body {
@@ -25,11 +22,22 @@ a {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
 }
 
 .container {
     width: 1200px;
     margin: auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 94px 0;
 }
 
 /* Header   ~~~~~   start*/
@@ -116,6 +124,7 @@ ul {
     justify-content: center;
     text-align: center;
     align-items: center;
+    width: 100%;
     height: 600px;
     background-color: var(--dark-back-color);
 }
@@ -166,18 +175,13 @@ ul {
 
 /* Advantages   ~~~~~   start*/
 .advantages {
-    padding-top: 94px;
-    padding-bottom: 118px;
+    padding-bottom: 0;
 }
 
 .advantages-list {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-}
-
-.advantages-list-item {
-    max-width: 270px;
 }
 
 .advantages-list-item {
@@ -214,9 +218,6 @@ ul {
 }
 
 /* Activities  ~~~~~   start*/
-.activities {
-    padding-bottom: 94px;
-}
 
 .activities-list {
     display: flex;
@@ -229,8 +230,6 @@ ul {
 
 /* Team ~~~~~   start*/
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--team-back-color);
 }
 
@@ -248,16 +247,22 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.team-list-item>h3 {
-    margin-top: 30px;
+.team-list-info {
+    padding: 30px 0px;
+}
+
+.team-list-item h3 {
     margin-bottom: 10px;
+    margin-top: 0px;
     color: var(--dark-header-color);
     font-weight: 500;
     font-size: 16px;
 }
 
-.team-list-item>p {
-    margin-bottom: 30px;
+.team-list-item p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     color: var(--dark-desc-color);
 }
 
@@ -265,16 +270,7 @@ ul {
 /* Index main   ~~~~~   end*/
 
 /* Portfolio main   ~~~~~   start*/
-
-.portfolio-main {
-    background-color: var(--activities-back-color);
-}
-
 /* Products  ~~~~~   start*/
-.products {
-    padding-top: 100px;
-    padding-bottom: 94px;
-}
 
 .filtres-list {
     display: flex;
@@ -312,14 +308,18 @@ ul {
 }
 
 .products-list-item {
+    max-width: 370px;
     background-color: #FFF;
+    border: 1px solid #EEEEEE;
+}
+
+.products-list-info {
+    padding: 20px 24px;
 }
 
 .products-list-item h3 {
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
 
     font-style: normal;
     font-weight: 700;
@@ -329,10 +329,6 @@ ul {
 }
 
 .products-list-item p {
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-bottom: 20px;
-
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -370,7 +366,7 @@ ul {
 }
 
 .footer-address {
-    padding-top: 20px;
+    margin-top: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -384,7 +380,7 @@ ul {
 
 .footer-address>a {
     color: rgba(255, 255, 255, 0.6);
-    padding-top: 9px;
+    margin-top: 9px;
 }
 
 /* Footer   ~~~~~   end*/
